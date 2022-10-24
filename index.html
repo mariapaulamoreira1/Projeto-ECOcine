@@ -1,0 +1,555 @@
+<!--ECOcine Project
+Web development
+Maria Paula Moreira Rocha and Pedro Augusto Godoy-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOcine </title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="/assets/images/icon.png">
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+    
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+        <!-- logo -->
+      <a href="/index.html" class="logo">
+        <img src="/assets/images/logo.svg" alt="ECOcine logo">
+      </a>
+
+      <div class="header-actions">
+       <!-- coloca o botão de pesquisa -->
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+                <!-- um tipo de caixa de linguagens -->
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+          <select name="language" id="language">
+            <option value="c++">C++</option>
+            <option value="java">JAVA</option>
+            <option value="php">PHP?</option>
+          </select>
+        </div>
+        <!-- botão pra fazer cadastro -->
+        <button class="btn btn-primary">Sign in</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">INICIO</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">FILMES</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">SERIES</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">CHAT</a>
+          </li>
+
+          <li>
+            <a href="/assets/infos/descricao.html" target="_blank" class="navbar-link">Informações</a>
+          </li>
+    
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+  <!--VIDEO TENTATIVA-->
+<section>
+  <video id="vslide" autoplay muted loop>
+    <source src="/assets/images/video capa.mp4" type="video/mp4">
+  </video>
+  
+  <ul class="navegacao">
+    <li onclick = "videoUrl('/assets/images/v1.mp4')"><img src="/assets/images/tumb-1.png"></li>
+    <li onclick = "videoUrl('/assets/images/v2.mp4')"><img src="/assets/images/tumb-2.png"></li>
+    <li onclick = "videoUrl('/assets/images/v4.mp4')"><img src="/assets/images/tumb-3.png"></li>
+    <li onclick = "videoUrl('/assets/images/v5.mp4')"><img src="/assets/images/tumb-4.png"></li>
+  </ul>
+  </section>
+  
+  <script type="text/javascript">
+  function videoUrl(capav){
+    document.getElementById("vslide").src = capav;       
+  }
+  </script>
+<!-- #UPCOMING-->
+
+      <section class="upcoming">
+        <div class="container">
+
+          <div class="flex-wrapper">
+
+            <div class="title-wrapper">
+              <p class="section-subtitle">FILMES</p>
+
+              <h2 class="h2 section-title">Recomendados para DEVs</h2>
+            </div>
+
+            <ul class="filter-list">
+
+              <li>
+                <button class="filter-btn">Filmes</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Series</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Anime</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="movies-list  has-scrollbar">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="/assets/infos/matrix.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-1.png" alt="Matrix">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/matrix.html">
+                    <h3 class="card-title">Matrix</h3>
+                  </a>
+
+                  <time datetime="2022">2 mil anos atrás</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">Full HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT137M">136 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="/assets/infos/ojogodaimitacao.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-2.png"
+                      alt="O jogo da Imitação">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/ojogodaimitacao.html">
+                    <h3 class="card-title">O Jogo da Imitação</h3>
+                  </a>
+
+                  <time datetime="2022">2014</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT126M">115 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="/assets/infos/starwars.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-3.png" alt="Star Wars">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/starwars.html">
+                    <h3 class="card-title">Star Wars</h3>
+                  </a>
+
+                  <time datetime="2022">5000 a.c</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">240p to 4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="">N/A</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>The force</data>
+                  </div>
+                </div>
+      </section>
+
+
+<!--TOP RATED-->
+
+      <section class="top-rated">
+        <div class="container">
+
+          <p class="section-subtitle">SÉRIES</p>
+
+          <h2 class="h2 section-title">Top Series</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn">Fantasia</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Ficção</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Terror</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Aventura</button>
+            </li>
+
+          </ul>
+
+          <ul class="series-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="/assets/infos/hotd.html">
+                  <figure class="card-banner">
+                    <img src="./assets//images/serie-1.png" alt="House of the Dragon">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/hotd.html">
+                    <h3 class="card-title">House of the Dragon</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT122M">1 Temporada</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>dracarys</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+              <div class="movie-card">
+
+                <a href="/assets/infos/strangerthings.html">
+                  <figure class="card-banner">
+                    <img src="/assets/images/serie-2.jpg" alt="Coisas Estranhas">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/strangerthings.html">
+                    <h3 class="card-title">Stranger Things</h3>
+                  </a>
+
+                  <time datetime="2022">2016</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT176M">4 Temporadas</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>11</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="/assets/infos/rick&morty.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/serie-3.jpg" alt="Rick & Morty">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="/assets/infos/rick&morty.html">
+                    <h3 class="card-title">Rick and Morty</h3>
+                  </a>
+
+                  <time datetime="2022">2013</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT116M">1000</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.9</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+    
+  <!--FOOTER-->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="ECOcine logo">
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Inicial</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Filmes</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Series</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Chat</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">informações</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Termos de uso</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacidade</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">Trabalho de Web</a>. All Rights Reserved of Maria Paula & Pedro Augusto
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!--PARA CIMA-->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+  <!--LINK PRO JS-->
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
