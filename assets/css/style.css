@@ -36,7 +36,9 @@ body { background: var(--eerie-black); }
 body.active { overflow: hidden; }
 .container { padding-inline: 10px; }
 
-/*Propriedade personalizadas que contém um valor que pode ser reutilizado por todo o documento usando a função (var).*/
+/*
+:root representa o elemento <html> e é idêntico ao seletor html , exceto que sua especificidade é mais alta.
+Propriedade personalizadas(--) que contém um valor que pode ser reutilizado por todo o documento usando a função (var).*/
 :root {
    /* cor dentro dos botoes*/
   --rich-black-fogra-29: hsl(0, 0%, 0%);
@@ -446,7 +448,9 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   background: position 50px;;
   padding-block: 80px 50px;
 }
+
 .footer-brand-wrapper .logo {
+  /* largura máxima permitida para o tamanho de um elemento*/
   width:fit-content;
   margin-inline: auto;
   margin-bottom: 60px;
@@ -643,15 +647,12 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  /*espaçamento e a medianiz do chamador entre as linhas e colunas*/
   gap: 10px;
   padding: 20px 35px;
   letter-spacing: 5px;
   border-radius: 6px;
 }
-
-.download-btn ion-icon { font-size: 16px; }
-
-
 
 /*MEDIA QUERIES renderização do conteúdo se adapte a diferentes telas*/
 /*responsivo 550px*/
