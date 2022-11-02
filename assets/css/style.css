@@ -397,7 +397,7 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   scroll-snap-align: start;
 }
 
-/*TOP RATED*/
+/*TOP SERIES*/
 .top-rated {
   background: url("/assets/images/hero-bg.mp4") no-repeat;
   background-size: cover;
@@ -528,7 +528,7 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   margin-inline: auto;
 }
 
-/*MOVIE DETAIL*/
+/*Detalhes do CARD*/
 
 
 .movie-detail {
@@ -653,24 +653,19 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
 
 
 
-/*MEDIA QUERIES*/
-/*responsive for large than 550px screen*/
+/*MEDIA QUERIES renderização do conteúdo se adapte a diferentes telas*/
+/*responsivo 550px*/
 
 @media (min-width: 550px) {
-
-  /* CUSTOM PROPERTY*/
-
   :root {
-    /* typography*/
     --fs-1: 42px;
   }
 
-  /*REUSED STYLE*/
   .container {
     max-width: 540px;
     margin-inline: auto;
   }
-  /* MOVIE CARD */
+  /*CARD */
   .movies-list {
     grid-template-columns: 1fr 1fr;
     gap: 60px 30px;
@@ -678,21 +673,17 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
 
   /* UPCOMING*/
   .upcoming .movies-list > li { min-width: calc(50% - 15px); }
-
-  /*MOVIE DETAIL*/
   .detail-subtitle { --fs-5: 22px; }
   .detail-title { --fs-1: 46px; }
 }
-/*responsive for large than 768px screen*/
+/*responsivo 768px*/
 @media (min-width: 768px) {
 
-  /*CUSTOM PROPERTY*/
+/*customização do style*/
   :root {
-    /*typography*/
     --fs-2: 36px;
   }
 
-  /* REUSED STYLE*/
   .container { max-width: 720px; }
 
   /* HEADER*/
@@ -751,12 +742,12 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   .copyright { margin-bottom: 0; }
   .footer-bottom-img { margin-inline: 0; }
 
-  /*MOVIE DETAIL*/
+  /*Detalhe card*/
   .detail-subtitle { --fs-5: 26px; }
   .detail-title { --fs-1: 50px; }
 }
 
-/**responsive for large than 992px screen*/
+/**responsivo em 992px*/
 @media (min-width: 992px) {
 
   /*REUSED STYLE*/
@@ -804,7 +795,7 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   .upcoming .section-title { margin-bottom: 0; }
   .upcoming .movies-list > li { min-width: calc(33.33% - 20px); }
 
-  /*MOVIE DETAIL*/
+  /*+DETALHE CARD*/
 
   .movie-detail { padding-bottom: 200px; }
   .movie-detail .container {
@@ -822,21 +813,19 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   }
 }
 
-/*responsive for large than 1200px screen*/
+/*responsivo em 1200px*/
 
 @media (min-width: 1200px) {
 
-  /*CUSTOM PROPERTY*/
   :root {
-    /*typography*/
+    /*letra*/
     --fs-1: 60px;
     --fs-4: 26px;
   }
 
-  /*REUSED STYLE*/
   .container { max-width: 1320px; }
 
-  /* MOVIE CARD */
+  /* CARD */
   .movies-list { grid-template-columns: repeat(4, 1fr); }
 
   /*HEADER*/
@@ -853,7 +842,7 @@ focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o
   /*UPCOMING*/
   .upcoming .movies-list > li { min-width: calc(25% - 22.5px); }
  
-  /*MOVIE DETAIL*/
+  /*DETALHE*/
   .movie-detail { padding-bottom: var(--section-padding); }
   .movie-detail-content { max-width: 620px; }
   .detail-title { --fs-1: 60px; }
